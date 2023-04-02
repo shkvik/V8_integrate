@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="custom">
+      <UniqueIdentifier>{b7ad1b85-d57c-4899-b6a0-597414ed1c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{dc156776-4534-4494-a3d7-300f504f3856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ast">
+      <UniqueIdentifier>{eb2227ea-fb71-4dec-99fc-9625260d74e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ast\private">
+      <UniqueIdentifier>{1eca52f5-26bb-44db-ae76-ba6568bf0143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ast\public">
+      <UniqueIdentifier>{02cc6342-6340-4567-bf9a-4f7054590568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{380aff01-c1aa-4d8f-a73d-b413d047fe11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\public">
+      <UniqueIdentifier>{07ccde85-4f66-4593-83a8-14ef895e9599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\private">
+      <UniqueIdentifier>{94d9a0fa-4001-497d-b0c7-27937f340ef2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>custom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\ast.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\ast-function-literal-id-reindexer.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\ast-value-factory.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\modules.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\prettyprinter.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\scopes.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\source-range-ast-visitor.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\variables.cc">
+      <Filter>src\ast\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\bignum.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\bignum-dtoa.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\bits.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\bounded-page-allocator.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\cached-powers.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\condition-variable.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cpu.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\division-by-constant.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\diy-fp.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\dtoa.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\emulated-virtual-address-subspace.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\fast-dtoa.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\file-utils.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\fixed-dtoa.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ieee754.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\logging.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\sanitizer\lsan-page-allocator.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\sanitizer\lsan-virtual-address-space.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\memory-protection-key.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\mutex.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\once.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\page-allocator.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-aix.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-cygwin.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-darwin.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-freebsd.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-fuchsia.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-ios.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-linux.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-openbsd.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-posix.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-posix-time.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-qnx.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-solaris.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-starboard.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\platform-win32.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\utils\random-number-generator.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\region-allocator.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\semaphore.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\debug\stack_trace.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\debug\stack_trace_android.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\debug\stack_trace_fuchsia.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\debug\stack_trace_posix.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\debug\stack_trace_win.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\strings.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\numbers\strtod.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\sys-info.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\platform\time.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ubsan.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\virtual-address-space.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\virtual-address-space-page-allocator.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\vlq-base64.cc">
+      <Filter>src\base\private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ast\ast.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\ast-function-literal-id-reindexer.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\ast-source-ranges.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\ast-traversal-visitor.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\ast-value-factory.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\modules.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\prettyprinter.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\scopes.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\source-range-ast-visitor.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\variables.h">
+      <Filter>src\ast\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\base-export.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\atomic-utils.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\atomicops.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\sanitizer\asan.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\address-region.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\bignum.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\bignum-dtoa.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\bit-field.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\bits.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\bits-iterator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\bounded-page-allocator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\build_config.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\bounds.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\cached-powers.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\compiler-specific.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\condition-variable.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\container-utils.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cpu.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\division-by-constant.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\diy-fp.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\double.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\dtoa.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\elapsed-timer.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\emulated-virtual-address-subspace.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\enum-set.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\export-template.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\fixed-dtoa.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\flags.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\free_deleter.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\functional.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hashmap.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hashmap-entry.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\fast-dtoa.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\file-utils.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\ieee754.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\immediate-crash.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\ios-headers.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\iterator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\lazy-instance.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\logging.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\sanitizer\lsan.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\sanitizer\lsan-page-allocator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\sanitizer\lsan-virtual-address-space.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\macros.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\memory.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\memory.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\memory-protection-key.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\sanitizer\msan.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\mutex.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\once.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\optional.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\overflowing-math.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\page-allocator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\platform.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\platform-linux.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\platform-posix.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\platform-posix-time.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\pointer-with-payload.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\qnx-math.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\utils\random-number-generator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\region-allocator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\ring-buffer.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\safe_conversions.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\safe_conversions_arm_impl.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\safe_conversions_impl.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\semaphore.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\small-vector.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\debug\stack_trace.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\string-format.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\strings.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\numbers\strtod.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\sys-info.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\template-utils.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\threaded-list.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\time.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\timezone-cache.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\sanitizer\tsan.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\v8-fallthrough.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\vector.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\virtual-address-space.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\virtual-address-space-page-allocator.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\vlq.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\vlq-base64.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\win32-headers.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\wrappers.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\platform\yield-processor.h">
+      <Filter>src\base\public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

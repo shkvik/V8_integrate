@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{34973b80-359a-4acd-a723-b2f8f7db3c5b}</ProjectGuid>
+    <RootNamespace>V8start</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Documents\CPP_Programs\V8_start;D:\Documents\CPP_Programs\V8_start\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\ast\ast-function-literal-id-reindexer.cc" />
+    <ClCompile Include="src\ast\ast-value-factory.cc" />
+    <ClCompile Include="src\ast\ast.cc" />
+    <ClCompile Include="src\ast\modules.cc" />
+    <ClCompile Include="src\ast\prettyprinter.cc" />
+    <ClCompile Include="src\ast\scopes.cc" />
+    <ClCompile Include="src\ast\source-range-ast-visitor.cc" />
+    <ClCompile Include="src\ast\variables.cc" />
+    <ClCompile Include="src\base\bits.cc" />
+    <ClCompile Include="src\base\bounded-page-allocator.cc" />
+    <ClCompile Include="src\base\cpu.cc" />
+    <ClCompile Include="src\base\debug\stack_trace.cc" />
+    <ClCompile Include="src\base\debug\stack_trace_android.cc" />
+    <ClCompile Include="src\base\debug\stack_trace_fuchsia.cc" />
+    <ClCompile Include="src\base\debug\stack_trace_posix.cc" />
+    <ClCompile Include="src\base\debug\stack_trace_win.cc" />
+    <ClCompile Include="src\base\division-by-constant.cc" />
+    <ClCompile Include="src\base\emulated-virtual-address-subspace.cc" />
+    <ClCompile Include="src\base\file-utils.cc" />
+    <ClCompile Include="src\base\ieee754.cc" />
+    <ClCompile Include="src\base\logging.cc" />
+    <ClCompile Include="src\base\numbers\bignum-dtoa.cc" />
+    <ClCompile Include="src\base\numbers\bignum.cc" />
+    <ClCompile Include="src\base\numbers\cached-powers.cc" />
+    <ClCompile Include="src\base\numbers\diy-fp.cc" />
+    <ClCompile Include="src\base\numbers\dtoa.cc" />
+    <ClCompile Include="src\base\numbers\fast-dtoa.cc" />
+    <ClCompile Include="src\base\numbers\fixed-dtoa.cc" />
+    <ClCompile Include="src\base\numbers\strtod.cc" />
+    <ClCompile Include="src\base\once.cc" />
+    <ClCompile Include="src\base\page-allocator.cc" />
+    <ClCompile Include="src\base\platform\condition-variable.cc" />
+    <ClCompile Include="src\base\platform\memory-protection-key.cc" />
+    <ClCompile Include="src\base\platform\mutex.cc" />
+    <ClCompile Include="src\base\platform\platform-aix.cc" />
+    <ClCompile Include="src\base\platform\platform-cygwin.cc" />
+    <ClCompile Include="src\base\platform\platform-darwin.cc" />
+    <ClCompile Include="src\base\platform\platform-freebsd.cc" />
+    <ClCompile Include="src\base\platform\platform-fuchsia.cc" />
+    <ClCompile Include="src\base\platform\platform-ios.cc" />
+    <ClCompile Include="src\base\platform\platform-linux.cc" />
+    <ClCompile Include="src\base\platform\platform-openbsd.cc" />
+    <ClCompile Include="src\base\platform\platform-posix-time.cc" />
+    <ClCompile Include="src\base\platform\platform-posix.cc" />
+    <ClCompile Include="src\base\platform\platform-qnx.cc" />
+    <ClCompile Include="src\base\platform\platform-solaris.cc" />
+    <ClCompile Include="src\base\platform\platform-starboard.cc" />
+    <ClCompile Include="src\base\platform\platform-win32.cc" />
+    <ClCompile Include="src\base\platform\semaphore.cc" />
+    <ClCompile Include="src\base\platform\time.cc" />
+    <ClCompile Include="src\base\region-allocator.cc" />
+    <ClCompile Include="src\base\sanitizer\lsan-page-allocator.cc" />
+    <ClCompile Include="src\base\sanitizer\lsan-virtual-address-space.cc" />
+    <ClCompile Include="src\base\strings.cc" />
+    <ClCompile Include="src\base\sys-info.cc" />
+    <ClCompile Include="src\base\ubsan.cc" />
+    <ClCompile Include="src\base\utils\random-number-generator.cc" />
+    <ClCompile Include="src\base\virtual-address-space-page-allocator.cc" />
+    <ClCompile Include="src\base\virtual-address-space.cc" />
+    <ClCompile Include="src\base\vlq-base64.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ast\ast-function-literal-id-reindexer.h" />
+    <ClInclude Include="src\ast\ast-source-ranges.h" />
+    <ClInclude Include="src\ast\ast-traversal-visitor.h" />
+    <ClInclude Include="src\ast\ast-value-factory.h" />
+    <ClInclude Include="src\ast\ast.h" />
+    <ClInclude Include="src\ast\modules.h" />
+    <ClInclude Include="src\ast\prettyprinter.h" />
+    <ClInclude Include="src\ast\scopes.h" />
+    <ClInclude Include="src\ast\source-range-ast-visitor.h" />
+    <ClInclude Include="src\ast\variables.h" />
+    <ClInclude Include="src\base\address-region.h" />
+    <ClInclude Include="src\base\atomic-utils.h" />
+    <ClInclude Include="src\base\atomicops.h" />
+    <ClInclude Include="src\base\base-export.h" />
+    <ClInclude Include="src\base\bit-field.h" />
+    <ClInclude Include="src\base\bits-iterator.h" />
+    <ClInclude Include="src\base\bits.h" />
+    <ClInclude Include="src\base\bounded-page-allocator.h" />
+    <ClInclude Include="src\base\bounds.h" />
+    <ClInclude Include="src\base\build_config.h" />
+    <ClInclude Include="src\base\compiler-specific.h" />
+    <ClInclude Include="src\base\container-utils.h" />
+    <ClInclude Include="src\base\cpu.h" />
+    <ClInclude Include="src\base\debug\stack_trace.h" />
+    <ClInclude Include="src\base\division-by-constant.h" />
+    <ClInclude Include="src\base\emulated-virtual-address-subspace.h" />
+    <ClInclude Include="src\base\enum-set.h" />
+    <ClInclude Include="src\base\export-template.h" />
+    <ClInclude Include="src\base\file-utils.h" />
+    <ClInclude Include="src\base\flags.h" />
+    <ClInclude Include="src\base\free_deleter.h" />
+    <ClInclude Include="src\base\functional.h" />
+    <ClInclude Include="src\base\hashmap-entry.h" />
+    <ClInclude Include="src\base\hashmap.h" />
+    <ClInclude Include="src\base\ieee754.h" />
+    <ClInclude Include="src\base\immediate-crash.h" />
+    <ClInclude Include="src\base\ios-headers.h" />
+    <ClInclude Include="src\base\iterator.h" />
+    <ClInclude Include="src\base\lazy-instance.h" />
+    <ClInclude Include="src\base\logging.h" />
+    <ClInclude Include="src\base\macros.h" />
+    <ClInclude Include="src\base\memory.h" />
+    <ClInclude Include="src\base\numbers\bignum-dtoa.h" />
+    <ClInclude Include="src\base\numbers\bignum.h" />
+    <ClInclude Include="src\base\numbers\cached-powers.h" />
+    <ClInclude Include="src\base\numbers\diy-fp.h" />
+    <ClInclude Include="src\base\numbers\double.h" />
+    <ClInclude Include="src\base\numbers\dtoa.h" />
+    <ClInclude Include="src\base\numbers\fast-dtoa.h" />
+    <ClInclude Include="src\base\numbers\fixed-dtoa.h" />
+    <ClInclude Include="src\base\numbers\strtod.h" />
+    <ClInclude Include="src\base\once.h" />
+    <ClInclude Include="src\base\optional.h" />
+    <ClInclude Include="src\base\overflowing-math.h" />
+    <ClInclude Include="src\base\page-allocator.h" />
+    <ClInclude Include="src\base\platform\condition-variable.h" />
+    <ClInclude Include="src\base\platform\elapsed-timer.h" />
+    <ClInclude Include="src\base\platform\memory-protection-key.h" />
+    <ClInclude Include="src\base\platform\memory.h" />
+    <ClInclude Include="src\base\platform\mutex.h" />
+    <ClInclude Include="src\base\platform\platform-linux.h" />
+    <ClInclude Include="src\base\platform\platform-posix-time.h" />
+    <ClInclude Include="src\base\platform\platform-posix.h" />
+    <ClInclude Include="src\base\platform\platform.h" />
+    <ClInclude Include="src\base\platform\semaphore.h" />
+    <ClInclude Include="src\base\platform\time.h" />
+    <ClInclude Include="src\base\platform\wrappers.h" />
+    <ClInclude Include="src\base\platform\yield-processor.h" />
+    <ClInclude Include="src\base\pointer-with-payload.h" />
+    <ClInclude Include="src\base\qnx-math.h" />
+    <ClInclude Include="src\base\region-allocator.h" />
+    <ClInclude Include="src\base\ring-buffer.h" />
+    <ClInclude Include="src\base\safe_conversions.h" />
+    <ClInclude Include="src\base\safe_conversions_arm_impl.h" />
+    <ClInclude Include="src\base\safe_conversions_impl.h" />
+    <ClInclude Include="src\base\sanitizer\asan.h" />
+    <ClInclude Include="src\base\sanitizer\lsan-page-allocator.h" />
+    <ClInclude Include="src\base\sanitizer\lsan-virtual-address-space.h" />
+    <ClInclude Include="src\base\sanitizer\lsan.h" />
+    <ClInclude Include="src\base\sanitizer\msan.h" />
+    <ClInclude Include="src\base\sanitizer\tsan.h" />
+    <ClInclude Include="src\base\small-vector.h" />
+    <ClInclude Include="src\base\string-format.h" />
+    <ClInclude Include="src\base\strings.h" />
+    <ClInclude Include="src\base\sys-info.h" />
+    <ClInclude Include="src\base\template-utils.h" />
+    <ClInclude Include="src\base\threaded-list.h" />
+    <ClInclude Include="src\base\timezone-cache.h" />
+    <ClInclude Include="src\base\utils\random-number-generator.h" />
+    <ClInclude Include="src\base\v8-fallthrough.h" />
+    <ClInclude Include="src\base\vector.h" />
+    <ClInclude Include="src\base\virtual-address-space-page-allocator.h" />
+    <ClInclude Include="src\base\virtual-address-space.h" />
+    <ClInclude Include="src\base\vlq-base64.h" />
+    <ClInclude Include="src\base\vlq.h" />
+    <ClInclude Include="src\base\win32-headers.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
